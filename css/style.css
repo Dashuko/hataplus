@@ -1,0 +1,598 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Arial";
+    margin: 0;
+    cursor: url('../img/normal.cur'), auto;
+}
+
+
+a:hover {
+    cursor: url('../img/hover.cur'), auto;
+}
+
+hr {
+    border: 1px solid transparent;
+    border-top-color: #e4e4ec;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.row {
+    margin: 0 -14px;
+    font-size: 0;
+}
+
+.column {
+    margin: 0 14px;
+    width: 219px;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top {
+    background-color: #1f1f56;
+    min-height: 55px;
+}
+
+.topmenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topmenu li {
+    display: inline-block;
+
+}
+
+.topmenu a {
+    color: #b1b1d2;
+    text-decoration: none;
+
+}
+
+.nav a:hover {
+    color: #fd8300;
+}
+
+.nav li {
+    margin-right: 25px;
+}
+
+.nav {
+    float: left;
+}
+
+.social {
+    float: right;
+}
+
+.social li {
+    margin-left: 25px;
+}
+
+.social a {
+    display: block;
+    background: url(../img/social_icon.png);
+    transition: all 1s ease;
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+}
+
+a.fb:hover {
+    background-position: 0 -21px;
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -12px 0;
+}
+
+a.tw:hover {
+    background-position: -12px -21px;
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -32px 0;
+}
+
+a.inst:hover {
+    background-position: -32px -21px;
+}
+
+div {
+    box-shadow: inset 5px, 5px, 10px, black;
+}
+
+.middle {
+    padding: 30px 0;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    background-color: #ffffff;
+}
+
+.middle p {
+    margin: 0;
+}
+
+.contact,
+.message {
+    padding-left: 48px;
+    position: relative;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.number {
+    position: relative;
+}
+
+.number:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -28px;
+    width: 16px;
+    height: 17px;
+    background: url(../img/message_icon.png) -1px -1px;
+}
+
+.number,
+.mailto {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.message a {
+    text-decoration: none;
+    color: #25252c;
+    font-size: 16px;
+    position: relative;
+}
+
+.sms:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 52px;
+    left: -10px;
+    top: -4px;
+    background-color: #e4e4ec;
+}
+
+.mailto {
+    position: relative;
+}
+
+.mailto:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -28px;
+    width: 17px;
+    height: 13px;
+    background: url(../img/message_icon.png) -38px -3px;
+}
+
+.mailto:hover {
+    text-decoration: underline;
+}
+
+.skype {
+    position: relative;
+}
+
+.skype:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -28px;
+    width: 18px;
+    height: 19px;
+    background: url(../img/message_icon.png) -18px -1px;
+}
+
+.table {
+    padding: 40px 0;
+}
+
+.table strong {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.table p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-family: "Arial";
+    margin-bottom: 0;
+}
+
+.table a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.sheet {
+    min-height: 46px;
+}
+
+.sheet table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sheet tr:nth-child(n+3) td {
+    border-top: 1px solid #cdcddd;
+}
+.sheet tr:hover td{
+    color: #fff;
+    background-color: #fd8300;
+    transition: all 1s ease;
+}
+.sheet th {
+    padding: 15px 20px;
+    border: none;
+    background-color: #1f1f56;
+}
+
+.sheet td {
+    padding: 15px 20px;
+    color: #666;
+    background-color: #e4e4ec;
+}
+.sheet a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.sheet a:hover {
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.e-mail a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.button {
+    text-align: right;
+}
+
+.button a:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    border: 3px solid #fd8300;
+    border-radius: 25px;
+    padding: 14px 30px;
+    font-size: 14px;
+    color: #25252c;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.proposalsofthemonth {
+    background-image: url(../img/proposal.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0 45px;
+}
+
+.proposalname {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.proposal {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Arial";
+}
+
+.proposalprice {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    margin: 0;
+}
+
+.proposalprice b {
+    color: #fd8300;
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.content {
+    padding: 37px 0 60px;
+}
+
+.category {
+    float: right;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.category p {
+    background-color: #1f1f56;
+    color: #fff;
+    margin: 0;
+    padding: 17px 13px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Roboto Slab"
+}
+
+.category ul {
+    background-color: #e4e4ec;
+    margin: 0;
+}
+
+.asidemenu a {
+    text-decoration: none;
+    color: #25252c;
+    padding: 13px 15px;
+    display: block;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.asidemenu>li:hover>a {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+.asidemenu>li:hover>.internalmenu {
+    display: block;
+}
+
+.internalmenu {
+    display: none;
+}
+
+.asidemenu,
+.internalmenu {
+    list-style: none;
+    padding: 0;
+}
+
+.internalmenu a {
+    color: #666;
+    padding-left: 31px;
+}
+
+.internalmenu a:hover {
+    background-color: #cecedd;
+    color: #666;
+}
+
+.asidemenu li {
+    position: relative;
+}
+
+.asidemenu>li:before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    width: 6px;
+    height: 6px;
+    right: 15px;
+    border: 1px solid #666;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    transition: all 0.8s ease;
+}
+
+.asidemenu>li:hover:before {
+    border-color: #fff;
+    transform: rotate(45deg);
+}
+
+.main {
+    float: left;
+    width: 713px;
+}
+
+.info address {
+    font-style: none;
+}
+
+.info h1 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab"
+}
+
+.info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.info a:hover {
+    text-decoration: none;
+}
+
+.info a {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.popular {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.house p {
+    color: #9999a6;
+    margin: 0;
+}
+
+.house h3:hover {
+    text-decoration: underline;
+}
+
+.house figure {
+    display: inline-block;
+    color: #9999a6;
+    margin: 0;
+    font-size: 13px;
+}
+
+.house figcaption {
+    color: #1f1f56;
+    margin: 0;
+}
+
+.mail {
+    text-decoration: underline;
+    color: #25252c;
+}
+
+.info .column a {
+    color: black;
+}
+
+.bottommenu .column {
+    vertical-align: top;
+}
+
+.bottommenu {
+    padding: 40px 0 30px;
+    background-color: #ededf5;
+}
+
+.bottommenu ul {
+    color: #666;
+}
+
+.bottommenu p {
+    color: #666;
+}
+
+.bottommenu a {
+    color: #25252c;
+    text-decoration: none;
+}
+
+.footermenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.footermenu a {
+    color: #666;
+}
+
+.footermenu a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.phone {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.appendix {
+    color: #25252c;
+    font-size: 16px;
+}
+
+.bottom {
+    color: #9999a6;
+    background-color: #dcdce6;
+    text-align: center;
+}
+
+.bottom p {
+    margin: 0;
+    padding: 15px 0;
+}
